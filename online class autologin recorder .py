@@ -14,7 +14,7 @@ options.add_argument("C:/Users//acer/AppData/Local/Google/Chrome/User Data/Defau
 driver = webdriver.Chrome(executable_path=r'C:/Users/acer/Downloads/chromedriver', chrome_options=options)
 driver.get(url)
 
-#the email password email may differ check by using developer tools
+#the email password element may differ check by using developer tools
 driver.find_element_by_id('email').send_keys(username)
 driver.find_element_by_id('password').send_keys(password)
 
